@@ -1,0 +1,144 @@
+body {
+    background: #333;
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+  }
+.profile{
+    width: 300px;
+    height: 380px;
+    background-color: red;
+    margin-top: 100px;
+    margin-left: 10px;
+    box-shadow: 10px 10px 30px rgba(0, 0,0,0.5);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.profile:hover{
+    cursor: pointer;
+    transform: translateY(-30px);
+}
+.profile::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 600px;
+    width: 100%;
+    background-color: blue;
+    clip-path: circle(260px at 50% -20%);
+}
+.img{
+    width: 130px;
+    height: 120px;
+    border-radius: 100px;
+    position: relative;
+    left: 90px;
+    top: -2px;
+}
+
+  .typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; 
+    border-right: .15em solid orange; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
+#h1text{
+    font-size: 30px;
+    color: yellow;
+}
+
+.btn1{
+  position: absolute;
+  top: 310px;
+  left: 26px;
+  border: none;
+  border-radius: 10px;
+  color: red;
+  background-color: yellow;
+}
+.btn1:hover{ 
+  cursor: pointer;
+  font-size: 20px; 
+  transform: translateY(-10px);
+}
+.btn2{
+  position: absolute;
+  top: 310px;
+  left: 96px;
+  border: none;
+  border-radius: 10px;
+  color: red;
+  background-color: yellow;
+}
+.btn2:hover{ 
+  cursor: pointer;
+  font-size: 20px; 
+  transform: translateY(-10px);
+}
+.btn3{
+  position: absolute;
+  top: 310px;
+  left: 156px;
+  border: none;
+  border-radius: 10px;
+  color: red;
+  background-color: yellow;
+}
+.btn3:hover{ 
+  cursor: pointer;
+  font-size: 20px; 
+  transform: translateY(-10px);
+}
+.btn4{
+  position: absolute;
+  top: 310px;
+  left: 266px;
+  border: none;
+  border-radius: 5px;
+  color: red;
+  background-color: yellow;
+}
+.btn4:hover{ 
+  cursor: pointer;
+  font-size: 20px; 
+  transform: translateY(-10px);
+}
+#answer{
+  background-color: chartreuse;
+  border: none;
+  color: blue;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#submit{
+  border: none;
+  color: rgb(3, 3, 3);
+  background-color: greenyellow;
+  cursor: pointer;
+}
+#output{
+  color: rgb(255, 255, 255);
+}
